@@ -62,7 +62,7 @@ function App() {
     <Container className="my-4">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<NoteList availableTags={tags} />} />
+          <Route path="/" element={<NoteList notes={notesWithTags} availableTags={tags} />} />
           <Route
             path="/new"
             element={
